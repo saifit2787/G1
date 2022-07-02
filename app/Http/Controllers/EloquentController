@@ -1,0 +1,43 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Sepatu1Model;
+use App\Models\Sepatu2Model;
+use App\Models\BrandModel;
+use App\Models\TokoModel;
+use App\Models\KategoriTokoModel;
+use App\Models\User;
+use App\Models\Post;
+use App\Models\Image;
+use App\Models\Activity_feed;
+use App\Models\comment;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Routing\UrlGenerator;
+
+
+class EloquentController extends Controller
+{
+    public function index(){
+        // return "fdfd";
+        // $sepatu2 = Sepatu2Model::find(1);
+        // $sepatu2 = $sepatu2->load('Sepatu2Model')->get();
+        // return $sepatu2 ;
+        $post = Post::find(1);
+        $image = $post->image;
+        return "image = ".$image ;
+        return $post;
+
+        $activity = Activity_feed::find(1);
+        $comment = $activity->comment;
+
+        return "vsdg" .$image;
+        return $comment ;
+        return ""+$comment ;
+        return $activity ;
+
+    }
+}
