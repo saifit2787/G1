@@ -22,7 +22,10 @@ use Illuminate\Routing\UrlGenerator;
 class EloquentController extends Controller
 {
     public function index(){
-
+        // return "fdfd";
+        // $sepatu2 = Sepatu2Model::find(1);
+        // $sepatu2 = $sepatu2->load('Sepatu2Model')->get();
+        // return $sepatu2 ;
         $post = Post::find(1);
         $image = $post->image;
         return "image = ".$image ;
