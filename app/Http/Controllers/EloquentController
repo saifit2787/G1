@@ -26,7 +26,7 @@ class EloquentController extends Controller
         $post = Post::find(1);
         $image = $post->image;
 
-        // return "image = ".$image ;
+        return "image = ".$image ;
         // return $post;
 
 
