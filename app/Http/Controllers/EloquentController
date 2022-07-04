@@ -26,6 +26,10 @@ class EloquentController extends Controller
         $post = Post::find(1);
         $image = $post->image;
 
+        // return "image = ".$image ;
+        // return $post;
+
+
         $activity = Activity_feed::find(1);
         $comment = $activity->comment;
 
