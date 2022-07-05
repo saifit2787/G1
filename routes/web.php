@@ -12,5 +12,5 @@ use App\Http\Controllers\SalesOrderController;
 Route::get('/MorpTo', [EloquentController::class, 'index']);
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Eloquent/index');
 });
